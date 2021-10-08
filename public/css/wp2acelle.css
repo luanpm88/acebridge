@@ -1,0 +1,17 @@
+.input-group .button {
+    border-radius: 0 2px 2px 0;
+}
+.form-control.bg-danger {
+    border-color: #dc3545 !important;
+}
+.form-control.bg-danger:focus {
+    outline: none!important;
+    box-shadow: none;
+}
+.wp-core-ui .button-primary.bg-dark {
+    border-color: #343a40;
+}
+.wp-core-ui .button-primary.bg-dark:focus {
+    outline: none!important;
+    box-shadow: none;
+}
