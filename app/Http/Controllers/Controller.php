@@ -37,7 +37,7 @@ class Controller extends BaseController
         }
 
         if ($request->product_id) {
-            $post = \App\Model\Post::find($request->product_id);
+            $post = \App\Models\Post::find($request->product_id);
 
             $product   = wc_get_product( $post->ID );
             $image_id  = $product->get_image_id();

@@ -80,7 +80,7 @@ class WcProductMetaLookup extends Model
         
         return $query->skip(($page-1) * $perPage)->take($perPage)
             ->get()->map(function ($item, $key) {                
-                $post = \App\Model\Post::find($item->ID);
+                $post = \App\Models\Post::find($item->ID);
 
                 $product   = wc_get_product( $post->ID );
                 $image_id  = $product->get_image_id();
