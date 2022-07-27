@@ -23,6 +23,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->wordpressDBConnect();
+    }
+
+    public function wordpressDBConnect()
+    {
+        if (!defined('DB_HOST')) {
+            return false;
+        }
+
         // =================== WORDPRESS CONNECTION =============================
         global $table_prefix;            
         // WordPress database connection
